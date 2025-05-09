@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="app1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/app1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/app1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Alarm.cpp" />
+		<Unit filename="Alarm.h" />
+		<Unit filename="Clock.cpp" />
+		<Unit filename="Clock.h" />
+		<Unit filename="SevenSegmentDisplay.cpp" />
+		<Unit filename="SevenSegmentDisplay.h" />
+		<Unit filename="Timer.cpp" />
+		<Unit filename="Timer.h" />
+		<Unit filename="app1.cbp" />
+		<Unit filename="assets/alarm_sound.wav" />
+		<Unit filename="assets/timer_sound.wav" />
+		<Unit filename="assets/timer_sound1.wav" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1718827497 source:c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\clock.cpp
+	"Clock.h"
+	"SevenSegmentDisplay.h"
+	<iostream>
+	<ctime>
+
+1718493533 c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\clock.h
+	<string>
+
+1718493533 c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\sevensegmentdisplay.h
+	<string>
+
+1718564676 source:c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\main.cpp
+	<iostream>
+	<thread>
+	<chrono>
+	<conio.h>
+	<windows.h>
+	"Clock.h"
+	"Timer.h"
+	"Alarm.h"
+	"SevenSegmentDisplay.h"
+	<locale>
+
+1718500081 c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\timer.h
+	<string>
+
+1718500081 c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\alarm.h
+	<string>
+
+1718827497 source:c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\sevensegmentdisplay.cpp
+	"SevenSegmentDisplay.h"
+	<iostream>
+
+1718500081 source:c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\timer.cpp
+	"Timer.h"
+	"SevenSegmentDisplay.h"
+	<iostream>
+	<sstream>
+	<windows.h>
+	<mmsystem.h>
+
+1718500081 source:c:\users\hp\downloads\2.zaawansowane tech projekt\clock_app1\clock_app\app1\alarm.cpp
+	"Alarm.h"
+	"SevenSegmentDisplay.h"
+	<iostream>
+	<ctime>
+	<windows.h>
+	<mmsystem.h>
+
