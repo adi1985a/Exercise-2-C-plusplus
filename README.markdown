@@ -1,4 +1,4 @@
-# ⏰🔔 ConsoleTime Pro: C++ Digital Clock, Alarm & Timer 🇵🇱
+# ⏰🔔 ConsoleTime Pro: C++ Digital Clock, Alarm & Timer 
 _A C++ console application simulating a digital clock with current time display, settable alarms, and countdown timers, featuring sound alerts and an ANSI-colored interface (Windows-focused)._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
