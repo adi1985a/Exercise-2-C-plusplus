@@ -21,7 +21,9 @@ _A C++ console application simulating a digital clock with current time display,
 
 ## 📄 Overview
 
-**ConsoleTime Pro**, developed by Adrian Lesniak, is a C++ console application that emulates a digital clock with added alarm and timer functionalities. It leverages several classes (`Clock`, `Timer`, `Alarm`, `SevenSegmentDisplay` - definitions assumed in user-provided headers) to manage time display, set and trigger alarms, and run countdown timers. The application features an ANSI-colored menu for user interaction, utilizes Windows-specific functions for sound playback (`PlaySound`) and console handling, and presents its interface with Polish text (e.g., "Aplikacja Zegarek"). Users can view the current time, set alarms for specific times, or start countdown timers, with audio alerts for alarm and timer completion.
+**ConsoleTime Pro**, developed by Adrian Lesniak, is a C++ console application that emulates a digital clock with added alarm and timer functionalities. It leverages several classes (`Clock`, `Timer`, `Alarm`, `SevenSegmentDisplay` - definitions assumed in user-provided headers) to manage time display, set and trigger alarms, and run countdown timers. The application features an ANSI-colored menu for user interaction, utilizes Windows-specific functions for sound playback (`PlaySound`) and console handling, and presents its interface with English text. Users can view the current time, set alarms for specific times, or start countdown timers, with audio alerts for alarm and timer completion.
+
+![Demo GIF](screenshots/1.gif)
 
 ## ✨ Key Features
 
@@ -44,13 +46,22 @@ _A C++ console application simulating a digital clock with current time display,
 *   🔊 **Sound Integration (Windows-specific)**:
     *   Utilizes the Windows `PlaySound` API function (from `mmsystem.h`, linked via `-lwinmm`) for playing `.wav` files for alarm and timer alerts.
     *   Requires `alarm_sound.wav` and `timer_sound.wav` to be present at a specified path.
-*   🇵🇱 **Polish Language Interface**: All user-facing text, prompts, and messages are in Polish.
 
 ## 🖼️ Screenshots (Conceptual)
 
-**Coming soon!**
 
-_This section would ideally show screenshots of: the colored main menu, the current time display (possibly with seven-segment style), the alarm setting prompt, the timer countdown, and examples of alert messages._
+_This section shows screenshots of: the colored main menu, the current time display (possibly with seven-segment style), the alarm setting prompt, the timer countdown, and examples of alert messages._
+
+<p align="center">
+  <img src="screenshots\Image1.jpg" width="300"/>
+  <img src="screenshots\Image2.jpg" width="300"/>
+  <img src="screenshots\Image3.jpg" width="300"/>
+  <img src="screenshots\Image4.jpg" width="300"/>
+  <img src="screenshots\Image5.jpg" width="300"/>
+  <img src="screenshots\Image6.jpg" width="300"/>
+  <img src="screenshots\Image7.jpg" width="300"/>
+  <img src="screenshots\Image8.jpg" width="300"/>
+</p>
 
 ## ⚙️ System Requirements & Assets
 
@@ -117,17 +128,18 @@ This application relies on several user-provided header files defining the core 
 1.  Compile and run `clock_app.exe` as detailed above.
 2.  **Interface**:
     *   The program will display a main menu with options presented in Polish and using ANSI colors (on compatible terminals):
-        1.  Pokaż aktualny czas (Show current time)
-        2.  Ustaw alarm (Set alarm)
-        3.  Ustaw minutnik (Set timer)
-        4.  Wyjście (Exit)
+        1. Show current time
+        2. Set alarm
+        3. Set timer
+        4. Exit
+           
 3.  **Input**:
     *   Enter a number (1–4) corresponding to your choice and press Enter.
 4.  **Actions**:
-    *   **Pokaż aktualny czas (Option 1)**: Displays the current time, updating in the console. Press any key to return to the menu.
-    *   **Ustaw alarm (Option 2)**: Prompts you to enter the alarm time in HH:MM format. Once set, the program will wait. When the system time matches the alarm time, `alarm_sound.wav` will play. Press any key to stop the alarm sound and return to the menu.
-    *   **Ustaw minutnik (Option 3)**: Prompts you to enter the timer duration in MM:SS format. A countdown will begin, possibly with sound. When the timer reaches zero, `timer_sound.wav` (or a different completion sound) will play. Press any key to acknowledge and return to the menu.
-    *   **Wyjście (Option 4)**: Closes the application.
+    *   **Show current time (Option 1)**: Displays the current time, updating in the console. Press any key to return to the menu.
+    *   **Set alarm (Option 2)**: Prompts you to enter the alarm time in HH:MM format. Once set, the program will wait. When the system time matches the alarm time, `alarm_sound.wav` will play. Press any key to stop the alarm sound and return to the menu.
+    *   **Set timer (Option 3)**: Prompts you to enter the timer duration in MM:SS format. A countdown will begin, possibly with sound. When the timer reaches zero, `timer_sound.wav` (or a different completion sound) will play. Press any key to acknowledge and return to the menu.
+    *   **Exit (Option 4)**: Closes the application.
     *   Invalid menu inputs will display an error message, and you'll be prompted to press a key to retry.
 
 ## 🗂️ File Structure
